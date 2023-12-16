@@ -24,3 +24,11 @@ def read_data_as_lines(file_name: str) -> list[str]:
 
 def ints_from_line(line: str, delimiter: str) -> list[int]:
     return list(map(int, line.split(delimiter)))
+
+
+def read_lines_as_dict(lines: list[str]) -> dict[str, int]:
+    d = {}
+    for line in lines:
+        k, v = line.split(':')
+        d[k.strip()] = int(v)
+    return d
