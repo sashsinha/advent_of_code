@@ -32,3 +32,9 @@ def read_lines_as_dict(lines: list[str]) -> dict[str, int]:
         k, v = line.split(':')
         d[k.strip()] = int(v)
     return d
+
+
+def read_lines_as_grid(lines: list[str]) -> tuple[list[list[int]], int, int]:
+    grid = [[int(ch) for ch in line.strip()] for line in lines]
+    return grid, len(grid), len(grid[0])
+
