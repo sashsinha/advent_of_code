@@ -25,6 +25,11 @@ def read_data_as_lines(file_name: str) -> list[str]:
         return input_file.readlines()
 
 
+def read_data_as_int_lines(file_name: str) -> list[int]:
+    with open(file_name) as input_file:
+        return list(map(int, input_file.readlines()))
+
+
 def ints_from_line(line: str, delimiter: str) -> list[int]:
     return list(map(int, line.split(delimiter)))
 
