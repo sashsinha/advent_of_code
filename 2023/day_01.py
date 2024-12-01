@@ -28,7 +28,7 @@ def part_1(data: list[str]) -> int:
   return total
 
 
-def part_2(data: str) -> int:
+def part_2(data: list[str]) -> int:
   total = 0
   for line in data:
     first_digit = None

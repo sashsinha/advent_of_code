@@ -9,4 +9,4 @@
 - Run formater: 
   - `uv run ruff check --select I --fix && uv run ruff format`
 - Run type checking: 
-  - `uv run mypy .`
+  - `uv run -m mypy 2024/day_01.py`
