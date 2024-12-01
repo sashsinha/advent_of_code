@@ -1,3 +1,9 @@
+"""Advent of Code 2024, Day 1 Solution.
+
+Usage:
+  (advent_of_code) $ uv run -m 2024.day_01
+"""
+
 from collections import Counter
 
 import utils
