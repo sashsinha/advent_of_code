@@ -22,7 +22,7 @@ def read_data_as_line(file_name: str) -> str:
 
 def read_data_as_lines(file_name: str) -> list[str]:
   with open(file_name) as input_file:
-    return input_file.readlines()
+    return list(map(str.strip, input_file.readlines()))
 
 
 def read_data_as_int_lines(file_name: str) -> list[int]:
