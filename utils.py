@@ -15,6 +15,17 @@ def download_data(day: int, year: int) -> None:
   os.chdir(owd)
 
 
+def create_blank_example_files(day: int, year: int) -> None:
+  for e in [1, 2]:
+    example_file_name = f'{year}/day_{day:0>2}_example_{e}.txt'
+    owd = os.getcwd()
+    os.chdir(os.path.dirname(__file__))
+    if not os.path.isfile(example_file_name):
+      with open(example_file_name, 'w') as example_input_file:
+        example_input_file.write('')
+    os.chdir(owd)
+
+
 def read_data_as_line(file_name: str) -> str:
   with open(file_name) as input_file:
     return input_file.read()
