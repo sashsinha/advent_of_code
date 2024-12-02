@@ -15,6 +15,7 @@ def part_1(data: str) -> int:
       total += int(a)
   return total
 
+
 def part_2(data: list[str]) -> int:
   n = len(data)
   look_ahead = n // 2
