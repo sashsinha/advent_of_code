@@ -14,7 +14,7 @@ def part_1(data: list[int]) -> int:
         return x * y
 
 
-def part_2(data: list[str]) -> int:
+def part_2(data: list[int]) -> int:
   for x in data[:-2]:
     for y in data[1:-1]:
       for z in data[2:-2]:
