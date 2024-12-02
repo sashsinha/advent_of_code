@@ -32,7 +32,7 @@ def main() -> None:
   example_1_data = utils.read_data_as_int_lines('2021/day_01_example_1.txt')
   print(f'Part 1 Example Answer: {part_1(example_1_data)}')
   data = utils.read_data_as_int_lines('2021/day_01.txt')
-  print(f'Part 2 Actual Answer: {part_1(data)}')
+  print(f'Part 1 Actual Answer: {part_1(data)}')
   # Part 2
   example_2_data = utils.read_data_as_int_lines('2021/day_01_example_2.txt')
   print(f'Part 2 Example Answer: {part_2(example_2_data)}')
